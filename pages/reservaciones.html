@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="keywords"
+        content="Reservar, bar, restaurant, menu, cerveza artesanal, tapas, grill, hamburguesas, pizzas, comida mediterranea, cena, vinos">
+    <meta name="description"
+        content="En nuestra página puedes reservar una mesa y disfrutar las diferentes áreas de Casa Barceló Bistró para eventos y celebraciones">
+
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="../img/logo.png" />
+    <!--link Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--Link Animación wow.js-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Reservaciones Restaurante, Eventos y Celebraciones | Casa Barceló Bistró</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Inicio Barra de Navegación-->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <!-- Brand -->
+            <div class="containerLogo">
+                <img class="logo" src="../img/logo.png" alt="Logo | Casa Barceló Bistró">
+            </div>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Bienvenidos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">La Bodega</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/menu.html">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="../pages/reservaciones.html">Reservaciones</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Nuestras Tiendas <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../pages/contacto.html">Casa Barceló Bistró, Delivery <i
+                                class="wow bounce fa-solid fa-cart-shopping"></i></a>
+                        <a class="dropdown-item" href="https://www.instagram.com/casabarcelobodega/?hl=es">Casa Barceló
+                            Bodega, Cervezas <i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="dropdown-item" href="https://www.instagram.com/casabarceloarteyfe/?hl=es">Casa Barceló
+                            Arte y Fe, Souvenirs <i class="fa-solid fa-cart-shopping"></i></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin Barra de Navegación -->
+    </header>
+
+    <main class="borde">
+        <section class="reservaciones row">
+            <section class="formContainer">
+                <form action="#" class="form">
+                    <fieldset class="formContainer__title">
+                        <legend> <strong> Reservaciones </strong> </legend>
+
+                        <div>
+                            <label class="form__label" for="Usuario">Usuario:</label>
+                            <input class="form__input" type="text" placeholder="Usuario" required>
+
+                            <label class="form__label" for="Contraseña">Contraseña:</label>
+                            <input class="form__input" type="password" placeholder="Contraseña" required>
+                        </div>
+
+                        <div>
+                            <label class="form__label" for="Nombre">Nombre:</label>
+                            <input class="form__input" type="text" placeholder="Nombre" required>
+
+                            <label class="form__label" class="form__label" for="Apellido">Apellido:</label>
+                            <input class="form__input" type="text" name="Apellido" placeholder="Apellido" required>
+
+                            <label class="form__label" for="tel">Teléfono:</label>
+                            <input class="form__input" type="tel" placeholder="tel" required>
+
+                            <label class="form__label" for="Mail">Correo:</label>
+                            <input class="form__input" type="mail" placeholder="Mail" required>
+                        </div>
+
+                        <div>
+                            <h4> <strong> Reservar una Mesa</strong></h4>
+                            <label class="form__label" for="Fecha">Fecha:</label>
+                            <input class="form__input" type="date" placeholder="Fecha" required>
+
+                            <label class="form__label" for="Hora">Hora:</label>
+                            <input class="form__input" type="time" placeholder="Hora" required>
+
+                            <label class="form__label" for="Numero">Número de Personas</label>
+                            <input class="form__input" type="number" placeholder="N° de Personas" required>
+                        </div>
+
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-warning dropdown-toggle" type="button"
+                                    id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                                    En que area prefieres?
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Salón</button>
+                                    <button class="dropdown-item" type="button">Launge</button>
+                                    <button class="dropdown-item" type="button">Terraza</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="form__label" for="comentario">Comentarios</label>
+                                <textarea class="form__texarea" name="text" id="" cols="30" rows="5"
+                                    placeholder="Déjanos un mensaje"></textarea>
+                                <input class="form__input form__input--submit" type="submit" value="Enviar">
+                                <input class="form__input form__input--submit" type="reset" value="Borrar">
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-warning">Acepto los terminos</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+
+
+
+    <!-- Inicio Footer-->
+    <footer class="container-fluid text-center">
+        <p>Todos los Derechos Reservados por Copy Tratamos sus datos personales con la exclusiva finalidad de gestionar
+            su pedido, comunicarle la información necesaria sobre el mismo, gestionar el pago, la facturación y elaborar
+            estadísticas.
+            Todos los derechos reservados por Copy Right© Casa Barceló Bistró | Desarrollado por
+            cristinagarcialanz@gmail.com los Derechos Reservados por Copy Right©</p>
+
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+    </footer>
+    <a href="#" class="subir"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+</body>
